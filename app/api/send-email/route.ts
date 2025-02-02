@@ -6,21 +6,21 @@ export async function POST(req: NextRequest) {
 
   // Create a transporter
   const transporter = nodemailer.createTransport({
-    host: 'mail.webglobe.cz', // Replace with your SMTP server
+    host: 'mail.webglobe.cz', 
     port: 587,
-    secure: false, // true for 465, false for other ports
+    secure: false, 
     auth: {
-      user: 'holub@nejlepsikomedie.cz', // Replace with your email
-      pass: 'Poklop12', // Replace with your email password
+      user: 'holub@nejlepsikomedie.cz',
+      pass: 'Poklop12', 
     },
   });
 
   // Email options
   const mailOptions = {
-    from: 'holub@nejlepsikomedie.cz', // Use the authenticated email address
-    to: email,
+    from: 'holub@nejlepsikomedie.cz', 
+    to: "jirka10holub@seznam.cz",
     subject: 'WD - vyplněný formulář',
-    text: `Zdar Teeckej, \n${name} ti vyplnil formulář tak na to koukni.\n\n Píše: \n ${message}`,
+    text: `Zdar Teeckej, \n${name} ti vyplnil formulář tak na to koukni.\n\n Píše: \n ${message} from ${email}`,
   };
 
   try {

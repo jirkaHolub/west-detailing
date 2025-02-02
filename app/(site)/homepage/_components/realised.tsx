@@ -1,7 +1,5 @@
 "use client";
 import { RealisedData } from "@/components/data/realised-data";
-import { Button } from "@/components/ui/button";
-import { useCarouselDrag } from "@/lib/carousel-scroll";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

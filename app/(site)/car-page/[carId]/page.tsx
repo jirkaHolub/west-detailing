@@ -1,14 +1,15 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "next/navigation";
 import { RealisedData } from "@/components/data/realised-data";
+import Lightbox from "react-18-image-lightbox";
+import "react-18-image-lightbox/style.css";
 import Image from "next/image";
-import Navigation from "@/components/navigation/navigation";
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
 
 const CarPage = () => {
   const { carId } = useParams();
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
 
   // Find the car data based on the carId
   const car = RealisedData.find((item) => item.id === carId);
@@ -17,14 +18,12 @@ const CarPage = () => {
     return <div>Car not found</div>;
   }
 
-  // Prepare images for the gallery
+  // Prepare images for the lightbox
   const images = Array(10)
     .fill(car.imageUrl)
     .map((imageUrl, index) => ({
-      original: imageUrl,
-      thumbnail: imageUrl,
-      originalAlt: `${car.car} ${index + 1}`,
-      thumbnailAlt: `${car.car} ${index + 1}`,
+      src: imageUrl,
+      alt: `${car.car} ${index + 1}`,
     }));
 
   return (
@@ -33,8 +32,24 @@ const CarPage = () => {
         {car.car}
       </div>
       <div className="bg-white py-10 px-4 lg:px-8">
-        <ImageGallery items={images} showThumbnails={true} />
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {images.map((image, index) => (
+            <div key={index} className="cursor-pointer" onClick={() => { setPhotoIndex(index); setIsOpen(true); }}>
+              <Image src={image.src} alt={image.alt} width={500} height={500} className="w-full h-auto" />
+            </div>
+          ))}
+        </div>
       </div>
+      {isOpen && (
+        <Lightbox
+          mainSrc={images[photoIndex].src}
+          nextSrc={images[(photoIndex + 1) % images.length].src}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)}
+          onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
+        />
+      )}
     </>
   );
 };
