@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -35,12 +36,20 @@ const About = () => {
               vozu dodá dokonalý vzhled a svěžest.
             </div>
             <div className="py-6 flex space-x-4">
-              <Button variant="dark" size="large">
-                SLUŽBY
-              </Button>
-              <Button className="text-dark" variant="transparent" size="large">
-                KONTAKT
-              </Button>
+              <Link href="/sluzby" passHref>
+                <Button variant="dark" size="large">
+                  SLUŽBY
+                </Button>
+              </Link>
+              <Link href="/kontakt" passHref>
+                <Button
+                  className="text-dark"
+                  variant="transparent"
+                  size="large"
+                >
+                  KONTAKT
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

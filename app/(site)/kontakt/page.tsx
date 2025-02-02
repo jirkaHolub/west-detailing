@@ -1,9 +1,11 @@
+import Form from "@/components/form";
 import React from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="pt-20 bg-[url('/Web-89.jpg')] bg-cover bg-top py-20 text-white relative">
+    <>
+    <div className="pt-20 bg-[url('/Web-55.jpg')] bg-cover bg-top py-20 text-white relative">
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <h2 className="text-center text-h2 font-extrabold py-8">Kontakt</h2>
 
@@ -30,7 +32,9 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    <Form/>
+    </>
   );
-};
+}
 
 export default Contact;

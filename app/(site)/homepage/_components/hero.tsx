@@ -7,11 +7,18 @@ export const Hero = () => {
     <div className="relative pt-20 h-[90vh] overflow-hidden [clip-path:polygon(0%_0%,100%_0%,100%_95%,0%_100%)] lg:[clip-path:polygon(0%_0%,100%_0%,100%_85%,0%_100%)]">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Web-84-2.jpg"
+          src="/Web-84.jpg"
           layout="fill"
           objectFit="cover"
           alt="Background Image"
-          className="w-full h-full"
+          className="sm:hidden lg:block w-full h-full"
+        />
+        <Image
+          src="/hero_m.jpg"
+          layout="fill"
+          objectFit="cover"
+          alt="Background Image"
+          className="lg:hidden w-full h-full"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay */}
       </div>

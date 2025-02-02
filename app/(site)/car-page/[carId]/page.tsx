@@ -18,13 +18,11 @@ const CarPage = () => {
     return <div>Car not found</div>;
   }
 
-  // Prepare images for the lightbox
-  const images = Array(10)
-    .fill(car.imageUrl)
-    .map((imageUrl, index) => ({
-      src: imageUrl,
-      alt: `${car.car} ${index + 1}`,
-    }));
+  // Use the car's images array
+  const images = car.images.map((imageUrl, index) => ({
+    src: imageUrl,
+    alt: `${car.car} ${index + 1}`,
+  }));
 
   return (
     <>

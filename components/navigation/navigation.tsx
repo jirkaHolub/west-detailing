@@ -62,13 +62,15 @@ const Navigation = () => {
                       ))}
                     </div>
                     <div className="flex space-x-4 items-center">
-                      <Button
-                        className="hidden lg:block"
-                        variant="default"
-                        size="medium"
-                      >
-                        KONTAKTOVAT
-                      </Button>
+                      <Link href="/kontakt" passHref>
+                        <Button
+                          className="hidden lg:block"
+                          variant="default"
+                          size="medium"
+                        >
+                          KONTAKTOVAT
+                        </Button>
+                      </Link>
                       <Link
                         href="https://www.instagram.com/yourprofile"
                         target="_blank"

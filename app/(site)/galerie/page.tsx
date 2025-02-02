@@ -24,7 +24,7 @@ const Gallery = () => {
                       layout="fill"
                       alt={item.car}
                     />
-                    <div className="absolute inset-0 bg-black opacity-30"></div>
+                    <div className="absolute inset-0 bg-black opacity-10"></div>
                     <div className="absolute bottom-0 p-4 text-white text-h3 font-bold">
                       {item.car}
                     </div>

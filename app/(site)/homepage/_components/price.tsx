@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import React from "react";
 
 const PriceList = () => {
@@ -12,9 +13,11 @@ const PriceList = () => {
           <div>
             Nejoblíbenější služby našech zákazníků si určitě zamilujete i vy.
           </div>
-          <Button variant="transparent" size="medium">
-            VŠECHNY SLUŽBY
-          </Button>
+          <Link href="/sluzby" passHref>
+            <Button size="medium" className="mt-4">
+              VŠECHNY SLUŽBY
+            </Button>
+          </Link>
         </div>
         <div className="lg:w-[280px] p-6 bg-ferrariYellow h-full">
           <div className="text-h2 font-black">2 080 Kč</div>
@@ -24,9 +27,11 @@ const PriceList = () => {
             vyleštíme skla a displeje, naimpregnujeme plasty a provoníme
             interiér.
           </div>
-          <Button variant="white" size="medium">
-            POPTAT
-          </Button>
+          <Link href="/sluzby" passHref>
+            <Button variant="white" size="medium">
+              VÍCE INFORMACÍ
+            </Button>
+          </Link>
         </div>
         <div className="lg:w-[280px] p-6 bg-white text-dark h-full">
           <div className="text-h2 font-black text-ferrariYellow">3 840 Kč</div>
@@ -36,9 +41,11 @@ const PriceList = () => {
             vyleštíme skla a displeje, naimpregnujeme plasty a provoníme
             interiér.
           </div>
-          <Button variant="dark" size="medium">
-            POPTAT
-          </Button>
+          <Link href="/sluzby" passHref>
+            <Button variant="dark" size="medium">
+            VÍCE INFORMACÍ
+            </Button>
+          </Link>
         </div>
         <div className="lg:w-[280px] p-6 bg-white text-dark h-full">
           <div className="text-h2 font-black text-ferrariYellow">1 900 Kč</div>
@@ -48,9 +55,11 @@ const PriceList = () => {
             vyleštíme skla a displeje, naimpregnujeme plasty a provoníme
             interiér.
           </div>
-          <Button variant="dark" size="medium">
-            POPTAT
-          </Button>
+          <Link href="/sluzby" passHref>
+            <Button variant="dark" size="medium">
+            VÍCE INFORMACÍ
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
