@@ -45,7 +45,7 @@ const MobileNavigation = () => {
                 </span>
                 <Image
                   className="h-12 w-auto"
-                  src="/logo_yellow.png"
+                  src="/logo.png"
                   width={120}
                   height={120}
                   onClick={() => setMobileMenuOpen(false)}

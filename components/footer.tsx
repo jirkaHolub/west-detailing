@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="space-y-8">
             <Image
               className="h-10 w-auto"
-              src="/Logo_yellow.png"
+              src="/logo.png"
               width={100}
               height={100}
               alt="Company name"
