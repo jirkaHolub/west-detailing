@@ -25,7 +25,7 @@ export const servicesData: ServiceSection[] = [
   {
     id: 1,
     title: "Exteriér",
-    imageUrl: "/web-110.jpg",
+    imageUrl: "/Web-110.jpg",
     packages: [
       {
         id: 1,
@@ -59,7 +59,7 @@ export const servicesData: ServiceSection[] = [
   {
     id: 2,
     title: "Interiér",
-    imageUrl: "/web-134.jpg",
+    imageUrl: "/Web-134.jpg",
     packages: [
       {
         id: 3,
@@ -90,7 +90,7 @@ export const servicesData: ServiceSection[] = [
   {
     id: 3,
     title: "Doplňkové služby",
-    imageUrl: "/web-80.jpg",
+    imageUrl: "/Web-80.jpg",
     packages: [
       { id: 5, title: "Leštění B/C sloupků", text: "", price: formatPrice(500) },
       { id: 6, title: "Čištění motoru", text: "", price: formatPrice(500) },
@@ -102,7 +102,7 @@ export const servicesData: ServiceSection[] = [
   {
     id: 4,
     title: "Renovace laku",
-    imageUrl: "/web-92.jpg",
+    imageUrl: "/Web-92.jpg",
     packages: [
       {
         id: 10,
@@ -128,7 +128,7 @@ export const servicesData: ServiceSection[] = [
   {
     id: 5,
     title: "Ochrany vozu",
-    imageUrl: "/web-8.jpg",
+    imageUrl: "/Web-8.jpg",
     packages: [
       {
         id: 12,
@@ -159,7 +159,7 @@ export const servicesData: ServiceSection[] = [
   {
     id: 6,
     title: "Výhodné balíčky",
-    imageUrl: "/web-100.jpg",
+    imageUrl: "/Web-100.jpg",
     packages: [
       {
         id: 15, 
