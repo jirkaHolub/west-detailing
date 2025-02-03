@@ -16,8 +16,8 @@ const Navigation = () => {
         {" "}
         {/* Increased z-index */}
         <nav className="relative" aria-label="Hlavní navigační lišta">
-          <div className="absolute w-full bg-dark bg-opacity-70 backdrop-blur-lg backdrop-filter border-b-[1px] border-b-gray-500">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="absolute w-full bg-dark backdrop-blur-lg backdrop-filter border-b-[1px] border-b-gray-500">
+            <div className="mx-auto px-4 sm:px-6">
               <div>
                 <div className="py-10 flex h-16 items-center justify-between">
                   {/* Logo (lg+) */}

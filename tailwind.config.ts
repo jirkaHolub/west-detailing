@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
   		colors: {
   			dark: '#0f0f0f',
   			ferrariYellow: '#E0B920'

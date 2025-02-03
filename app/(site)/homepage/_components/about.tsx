@@ -6,7 +6,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="bg-white relative">
-      <div className="max-w-7xl mx-auto px-4 s:px-6 pb-10 lg:px-8 lg:py-10">
+      <div className="max-w-7xl mx-auto px-4 s:px-6 pb-10 lg:px-8 lg:pb-10 lg:pt-0">
         <div className="flex flex-col-reverse lg:flex-row lg:space-x-32 justify-between items-center relative">
           {/* SVG Shape */}
           <svg
@@ -27,7 +27,7 @@ const About = () => {
               height={400}
             />
           </div>
-          <div className="space-y-4 w-full lg:w-1/2 mt-8 lg:mt-0">
+          <div className="space-y-4 w-full lg:w-1/2 mt-0 lg:mt-0">
             <div className="text-h2 font-extrabold">PROČ MY?</div>
             <div>
               Naše myčka je nejlepší, protože poskytujeme důkladné čištění

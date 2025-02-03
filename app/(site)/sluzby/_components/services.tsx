@@ -45,8 +45,12 @@ const Services = () => {
                   layout="fill"
                   objectFit="cover"
                 />
-                <div className="absolute inset-0 bg-black opacity-30"></div> {/* Overlay */}
-                <div className="absolute bottom-0 p-4" onClick={() => handleOpenDrawer(item.id)}>
+                <div className="absolute inset-0 bg-black opacity-30"></div>{" "}
+                {/* Overlay */}
+                <div
+                  className="absolute bottom-0 p-4"
+                  onClick={() => handleOpenDrawer(item.id)}
+                >
                   <h3 className="text-h3 font-bold shadow-lg">{item.title}</h3>
                 </div>
               </div>
@@ -87,6 +91,13 @@ const Services = () => {
               </Drawer>
             </div>
           ))}
+        </div>
+        <div className="text-center mx-auto pt-10">
+          <div>
+            Věrnostní sleva -20% slevu získáváte při každé pravidelné návštěvě do 1 měsíce na stejnou SPZ<br />
+            Automobily 4×4, SUV, crossovery, MPV a luxusní limuzíny = XL Ceník +20%
+            Užitkové, dodávky, multivany a velké pick-upy = XXL Ceník +30%
+          </div>
         </div>
       </div>
     </div>

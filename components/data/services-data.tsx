@@ -69,7 +69,7 @@ export const servicesData: ServiceSection[] = [
 - Vyleštění skel a displayů
 - Impregnace plastů
 - Provonění interiéru`,
-        price: formatPrice(1450),
+        price: formatPrice(1650),
       },
       {
         id: 4,
@@ -158,26 +158,51 @@ export const servicesData: ServiceSection[] = [
   },
   {
     id: 6,
-    title: "Výhodné balíčky",
+    title: "Výhodné balíčky - 10%",
     imageUrl: "/Web-100.jpg",
     packages: [
       {
         id: 15, 
         title: "Star",
-        text: `- Kombinace exteriérového a interiérového čištění
-- Předmytí aktivní pěnou
-- Mytí podběhů, kol, karoserie a impregnace pneumatik
-- Tepování koberečků, úprava vlákna, vyleštění skel`,
-        price: formatPrice(2080),
+        text: `- Předmytí aktivní pěnou
+- mytí podběhů
+- Vyčištění mezidveřních prostor
+- Ruční mytí mikrovláknovou houbou
+- Ruční mytí kol chemií
+- Nanesení ochrany
+- Vysušení karoserie (vč. kol, mezidveřních prostor)
+- impregnace pneumatik
+- Vyčištění palubní desky a interiéru
+- Vysátí celého interiéru včetně kufru
+- Tepování koberečků + úprava vlákna
+- Vyleštění skel a displayů
+- Impregnace plastů
+- Provonění interiéru
+`,
+        price: formatPrice(2520),
       },
       {
         id: 16,
         title: "Superstar",
-        text: `- Nejkomplexnější balíček péče o vozidlo
-- Předmytí aktivní pěnou, ruční mytí mikrovláknem a kančí štětinou
+        text: `- Předmytí aktivní pěnou
+- mytí podběhů
+- Vyčištění mezidveřních prostor
+- 1. Ruční mytí mikrovláknovou houbou
+- Ruční mytí kol chemií
+- 2. Detailní mytí kančí štětinou (kol, karoserie)
 - Aplikace Sealantu (ochrana na 3 měsíce)
-- Hloubkové čištění interiéru vč. tepování sedadel a dveří`,
-        price: formatPrice(3840),
+- Vysušení karoserie (vč. kol, mezidveřních prostor)
+- impregnace pneumatik
+- Vyčištění palubní desky a interiéru kančí štětinou
+- Vysátí celého interiéru včetně kufru
+- Vyleštění skel a displayů
+- tepování koberečků + úprava vlákna
+- tepování podlah vč. kufru
+- tepování dveří v případě kůže - hloubkové čištění melaminovou houbičkou
+- tepování látkových sedaček (u kůže hloubkové čistění melaminovou houbičkou)
+- Impregnace plastů
+- provonění interiéru`,
+        price: formatPrice(3740),
       },
     ],
   },

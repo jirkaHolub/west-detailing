@@ -78,7 +78,7 @@ export default function Form() {
                     id="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="block w-full rounded-md border-0 px-3.5 py-1.5 text-neutral-900 shadow-sm ring-1 ring-inset ring-neutral-300 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-ferrariYellow sm:text-sm sm:leading-6"
+                    className="block w-full bg-dark border-b border-gray-500 text-white placeholder-gray-400 focus:outline-none focus:border-gray-300"
                   />
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Form() {
                     id="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="block w-full rounded-md border-0 px-3.5 py-1.5 text-neutral-900 shadow-sm ring-1 ring-inset ring-neutral-300 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-ferrariYellow sm:text-sm sm:leading-6"
+                    className="block w-full bg-dark border-b border-gray-500 text-white placeholder-gray-400 focus:outline-none focus:border-gray-300"
                   />
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function Form() {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-neutral-900 shadow-sm ring-1 ring-inset ring-neutral-300 placeholder:text-neutral-400 focus:ring-2 focus:ring-inset focus:ring-ferrariYellow sm:text-sm sm:leading-6"
+                   className="block w-full bg-dark border-b border-gray-500 text-white placeholder-gray-400 focus:outline-none focus:border-gray-300"
                   />
                 </div>
               </div>
