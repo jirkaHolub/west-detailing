@@ -49,7 +49,7 @@ const MobileNavigation = () => {
                   width={120}
                   height={120}
                   onClick={() => setMobileMenuOpen(false)}
-                  alt="Logo společnosti Vavřička projekce | vodohospodářské stavby"
+                  alt="Logo  West detailing | Ruční mytí aut | Ochrana laků"
                 />
               </Link>
               <button

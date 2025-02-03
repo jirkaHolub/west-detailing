@@ -1,9 +1,48 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+"use client"
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import Image from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Button } from "@/components/ui/button";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".about-image",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".about-image",
+          start: "top 80%",
+          end: "top 50%",
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".about-text",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".about-text",
+          start: "top 80%",
+          end: "top 50%",
+          scrub: true,
+        },
+      }
+    );
+  }, []);
+
   return (
     <div className="relative">
       <div className="max-w-7xl mx-auto px-4 s:px-6 py-10 lg:px-8">
@@ -18,7 +57,7 @@ const About = () => {
             <polygon points="0,60 600,0 600,400 0,400" fill="#E0B920" />
           </svg>
           {/* Image with Clip Path */}
-          <div className="overflow-hidden relative z-10 w-full lg:w-1/2 [clip-path:polygon(0%_15%,100%_0%,100%_100%,0%_100%)]">
+          <div className="overflow-hidden relative z-10 w-full lg:w-1/2 [clip-path:polygon(0%_15%,100%_0%,100%_100%,0%_100%)] about-image">
             <Image
               src="/Web-124.jpg"
               alt="About"
@@ -27,7 +66,7 @@ const About = () => {
               height={400}
             />
           </div>
-          <div className="space-y-4 w-full lg:w-1/2 mt-0 lg:mt-0">
+          <div className="space-y-4 w-full lg:w-1/2 mt-0 lg:mt-0 about-text">
             <div className="text-h2 font-extrabold">PROČ MY?</div>
             <div>
               Naše myčka je nejlepší, protože poskytujeme důkladné čištění
@@ -36,19 +75,20 @@ const About = () => {
               vozu dodá dokonalý vzhled a svěžest.
             </div>
             <div className="py-6 flex space-x-4">
-              <Link href="/sluzby" passHref>
+            <Link href="/sluzby" passHref>
                 <Button variant="default" size="large">
                   SLUŽBY
                 </Button>
               </Link>
               <Link href="/kontakt" passHref>
                 <Button
+                  className="text-white"
                   variant="transparent"
                   size="large"
-                >
-                  KONTAKT
-                </Button>
-              </Link>
+                  >
+                    KONTAKT
+                  </Button>
+                </Link>
             </div>
           </div>
         </div>

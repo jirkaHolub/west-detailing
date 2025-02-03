@@ -24,14 +24,14 @@ const Navigation = () => {
                   <div className="hidden lg:flex lg:items-center space-x-8">
                     <Link href="/">
                       <span className="sr-only">
-                        Vavřička projekce | VODOHOSPODÁŘSKÉ STAVBY
+                        West detailing | Mytí a čištění aut v Plzni
                       </span>
                       <Image
                         className="h-12 w-auto"
                         src="/logo.png"
                         width={120}
                         height={120}
-                        alt="Logo společnosti Vavřička projekce | vodohospodářské stavby"
+                        alt="West detailing"
                       />
                     </Link>
                   </div>
@@ -39,14 +39,14 @@ const Navigation = () => {
                   {/* Logo (lg-) */}
                   <Link href="/" className="lg:hidden ml-auto">
                     <span className="sr-only">
-                      Vavřička projekce | VODOHOSPODÁŘSKÉ STAVBY
+                    West detailing | Mytí a čištění aut v Plzni
                     </span>
                     <Image
                       className="h-12"
-                      src="/logo_yellow.png"
+                      src="/logo.png"
                       width={120}
                       height={120}
-                      alt="Logo společnosti Vavřička projekce | vodohospodářské stavby"
+                      alt="Logo West detailing"
                     />
                   </Link>
                   <div className="hidden lg:flex flex-1 items-center justify-end space-x-8">
@@ -72,7 +72,7 @@ const Navigation = () => {
                         </Button>
                       </Link>
                       <Link
-                        href="https://www.instagram.com/westdetailingcz/"
+                        href="https://www.instagram.com/westdetailing.cz/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
