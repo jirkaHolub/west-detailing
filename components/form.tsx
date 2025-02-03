@@ -38,7 +38,7 @@ export default function Form() {
         setSuccessMessage('Failed to send email');
       }
     } catch (error) {
-      setSuccessMessage('Failed to send email');
+      setSuccessMessage(error + 'Failed to send email');
     }
   };
 

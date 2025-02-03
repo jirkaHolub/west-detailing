@@ -1,13 +1,37 @@
-import Image from "next/image";
-import React from "react";
+"use client"
+import React, { useState, useEffect } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa";
+import Image from "next/image";
+
+
+const images = [
+  "/Web-84.jpg",
+  "/Web-55.jpg",
+  // Add more image URLs as needed
+];
+
 
 export const Hero = () => {
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 7000); // Change image every 7 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
+
   return (
+    
+    
     <div className="relative pt-20 h-[90vh] overflow-hidden [clip-path:polygon(0%_0%,100%_0%,100%_95%,0%_100%)] lg:[clip-path:polygon(0%_0%,100%_0%,100%_85%,0%_100%)]">
+
+      
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Web-84.jpg"
+          src={images[currentImageIndex]}
           layout="fill"
           objectFit="cover"
           alt="Background Image"
@@ -20,8 +44,10 @@ export const Hero = () => {
           alt="Background Image"
           className="lg:hidden w-full h-full"
         />
-        <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay */}
+        <div className="absolute inset-0 bg-black opacity-25"></div> 
       </div>
+
+
       <div className="relative z-10 max-w-7xl mx-auto text-white h-full flex flex-col lg:justify-between justify-end">
         <div className="hidden lg:flex px-4 lg:px-8 justify-items-start">
           <div className="space-x-8 border-b-[1px] border-b-gray-500 h-16 flex items-center">
