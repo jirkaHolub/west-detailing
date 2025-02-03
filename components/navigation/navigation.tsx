@@ -72,7 +72,7 @@ const Navigation = () => {
                         </Button>
                       </Link>
                       <Link
-                        href="https://www.instagram.com/yourprofile"
+                        href="https://www.instagram.com/westdetailingcz/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
