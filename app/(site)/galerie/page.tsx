@@ -11,7 +11,7 @@ const Gallery = () => {
       <div className="pt-28 text-center text-h2 font-extrabold pb-8 px-4 lg:px-8  text-white bg-dark">
         GALERIE
       </div>
-      <div className="bg-white py-8 px-4 lg:px-8">
+      <div className="bg-lightDark text-white py-8 px-4 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {data.map((item) => (
             <div key={item.id} className="w-full">

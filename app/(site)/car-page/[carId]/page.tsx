@@ -7,7 +7,8 @@ import "react-18-image-lightbox/style.css";
 import Image from "next/image";
 
 const CarPage = () => {
-  const { carId } = useParams();
+  const params = useParams();
+  const carId = params?.carId as string;
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
@@ -15,7 +16,7 @@ const CarPage = () => {
   const car = RealisedData.find((item) => item.id === carId);
 
   if (!car) {
-    return <div>Car not found</div>;
+    return <div>Auto nenalezeno</div>;
   }
 
   // Use the car's images array

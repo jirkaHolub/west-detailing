@@ -46,7 +46,7 @@ export default function Form() {
     <div className="bg-dark text-white relative">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative w-full h-full lg:h-auto lg:w-auto">
-          <div className="absolute inset-0">
+          <div className="-mx-16 -ml-28 left-0 absolute inset-0">
             <Image
               src="/Web-89.jpg"
               alt="Form"

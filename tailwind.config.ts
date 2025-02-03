@@ -15,6 +15,7 @@ export default {
       },
   		colors: {
   			dark: '#0f0f0f',
+        lightDark: '#171717',
   			ferrariYellow: '#E0B920'
   		},
   		fontSize: {

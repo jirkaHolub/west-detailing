@@ -5,8 +5,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-white relative">
-      <div className="max-w-7xl mx-auto px-4 s:px-6 pb-10 lg:px-8 lg:pb-10 lg:pt-0">
+    <div className="relative">
+      <div className="max-w-7xl mx-auto px-4 s:px-6 py-10 lg:px-8">
         <div className="flex flex-col-reverse lg:flex-row lg:space-x-32 justify-between items-center relative">
           {/* SVG Shape */}
           <svg
@@ -37,13 +37,12 @@ const About = () => {
             </div>
             <div className="py-6 flex space-x-4">
               <Link href="/sluzby" passHref>
-                <Button variant="dark" size="large">
+                <Button variant="default" size="large">
                   SLUŽBY
                 </Button>
               </Link>
               <Link href="/kontakt" passHref>
                 <Button
-                  className="text-dark"
                   variant="transparent"
                   size="large"
                 >

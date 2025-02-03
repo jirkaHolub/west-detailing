@@ -24,7 +24,7 @@ const Services = () => {
   };
 
   return (
-    <div>
+    <div className="bg-lightDark text-white">
       <div className="pt-28 text-center text-h2 font-extrabold pb-8 px-4 lg:px-8 text-white bg-dark">
         SLUŽBY
       </div>
@@ -95,7 +95,7 @@ const Services = () => {
         <div className="text-center mx-auto pt-10">
           <div>
             Věrnostní sleva -20% slevu získáváte při každé pravidelné návštěvě do 1 měsíce na stejnou SPZ<br />
-            Automobily 4×4, SUV, crossovery, MPV a luxusní limuzíny = XL Ceník +20%
+            Automobily 4×4, SUV, crossovery, MPV a luxusní limuzíny = XL Ceník +20%<br />
             Užitkové, dodávky, multivany a velké pick-upy = XXL Ceník +30%
           </div>
         </div>
