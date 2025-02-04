@@ -48,7 +48,7 @@ export const Hero = () => {
             className={`transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
           />
         ))}
-        <div className="absolute inset-0 bg-black opacity-25"></div>
+        <div className="absolute inset-0 bg-black opacity-10"></div>
       </div>
       {/* Mobile Carousel */}
       <div className="block lg:hidden absolute inset-0 z-0">
@@ -87,7 +87,7 @@ export const Hero = () => {
         </div>
         <div className="bottom-0 px-4 lg:px-8 pb-14 lg:pb-28">
           <div className="lg:text-left space-y-8 lg:space-y-6">
-            <div className="text-ferrariYellow text-h3 font-semibold shadow-sm -mb-4 lg:-mb-4">West detailing</div>
+            <div className="text-ferrariYellow text-h3 font-semibold drop-shadow-lg -mb-4 lg:-mb-4">West detailing</div>
             <div className="lg:text-h1 text-h2 font-extrabold text-white drop-shadow-lg leading-none">
               VAŠE CESTA K LUXUSU
             </div>
