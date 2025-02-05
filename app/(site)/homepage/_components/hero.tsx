@@ -12,7 +12,8 @@ const desktopImages = [
 
 const mobileImages = [
   "/hero2.jpg",
-  "/herors6.jpg"
+  "/herors6.jpg",
+  "/hero2.jpg"
   // Add more image URLs as needed
 ];
 
