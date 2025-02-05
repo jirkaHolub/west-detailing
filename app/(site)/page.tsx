@@ -2,9 +2,9 @@ import Homepage from "./homepage/page";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Myčka aut Plzeň – Profesionální ruční mytí, detailing a ochrana laků",
+  title: "Profesionální ruční mytí, detailing a ochrana laků",
   description:
-    "Hledáte spolehlivou myčku aut v Plzni? Nabízíme profesionální ruční i automatické mytí, detailing a ochranu laků s použitím prvotřídních čisticích prostředků. Dopřejte svému vozu špičkovou péči a navštivte nás ještě dnes.",
+    "Hledáte spolehlivou myčku aut v Plzni? Nabízíme profesionální ruční i automatické mytí, detailing a ochranu laků s použitím prvotřídních čisticích prostředků.",
   keywords:
     "myčka aut Plzeň, ruční mytí aut, automatické mytí, auto detailing, ochrana laků, ekologické čisticí prostředky, profesionální mytí aut",
   robots: "index, follow",
