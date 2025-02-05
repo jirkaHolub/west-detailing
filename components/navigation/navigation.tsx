@@ -16,7 +16,7 @@ const Navigation = () => {
         {" "}
         {/* Increased z-index */}
         <nav className="relative" aria-label="Hlavní navigační lišta">
-          <div className="absolute w-full bg-dark backdrop-blur-lg backdrop-filter border-b-[1px] border-b-gray-500">
+          <div className="absolute w-full bg-dark backdrop-blur-lg backdrop-filter border-b-[1px]">
             <div className="mx-auto px-4 sm:px-6">
               <div>
                 <div className="py-10 flex h-16 items-center justify-between">
