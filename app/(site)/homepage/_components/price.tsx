@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { gsap } from "gsap";
@@ -44,12 +44,10 @@ const PriceList = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="price-card lg:w-[280px] p-6 bg-ferrariYellow h-full">
-            <div className="text-h2 font-black">2 080 Kč</div>
-            <div className="text-h3 font-bold"> CELEBRITY</div>
+            <div className="text-h2 font-black">2 520,-</div>
+            <div className="text-h3 font-bold"> STAR</div>
             <div className="pb-4">
-              Vyčistíme palubní desku i celý interiér, včetně vysátí kufru,
-              vyleštíme skla a displeje, naimpregnujeme plasty a provoníme
-              interiér.
+            Kompletní ruční mytí vozu včetně kol, podběhů a mezidveřních prostor. Čistý interiér díky vysátí, tepování a impregnaci plastů. Na závěr vyleštění skel, provonění a ošetření pneumatik.
             </div>
             <Link href="/sluzby" passHref>
               <Button variant="white" size="medium">
@@ -57,13 +55,11 @@ const PriceList = () => {
               </Button>
             </Link>
           </div>
-          <div className="price-card lg:w-[280px] p-6 bg-white text-dark h-full">
-            <div className="text-h2 font-black text-ferrariYellow">3 840 Kč</div>
-            <div className="text-h3 font-bold"> STAR</div>
+          <div className="price-card lg:w-[280px] p-6 bg-lightDark text-white h-full">
+            <div className="text-h2 font-black text-ferrariYellow">3 870,-</div>
+            <div className="text-h3 font-bold"> SUPERSTAR</div>
             <div className="pb-4">
-              Vyčistíme palubní desku i celý interiér, včetně vysátí kufru,
-              vyleštíme skla a displeje, naimpregnujeme plasty a provoníme
-              interiér.
+            Kompletní péče o interiér včetně hloubkového čištění sedaček a tepování podlahy. Detailní čištění jemnými kančími štětinami, impregnace plastů a leštění skel. Na závěr svěží vůně pro dokonalý zážitek.
             </div>
             <Link href="/sluzby" passHref>
               <Button variant="dark" size="medium">
@@ -71,13 +67,11 @@ const PriceList = () => {
               </Button>
             </Link>
           </div>
-          <div className="price-card lg:w-[280px] p-6 bg-white text-dark h-full">
-            <div className="text-h2 font-black text-ferrariYellow">1 900 Kč</div>
-            <div className="text-h3 font-bold"> SUPERSTAR</div>
+          <div className="price-card lg:w-[280px] p-6 bg-lightDark text-white h-full">
+            <div className="text-h2 font-black text-ferrariYellow">5 445,-</div>
+            <div className="text-h3 font-bold"> SUPERTOPSTAR</div>
             <div className="pb-4">
-              Vyčistíme palubní desku i celý interiér, včetně vysátí kufru,
-              vyleštíme skla a displeje, naimpregnujeme plasty a provoníme
-              interiér.
+            Prémiová péče o vůz s leštěním B/C sloupků a aplikací sealantu na karoserii. Detailní čištění motorového prostoru a hloubkové ošetření interiéru. Maximální ochrana, lesk a svěžest pro váš vůz.
             </div>
             <Link href="/sluzby" passHref>
               <Button variant="dark" size="medium">

@@ -34,7 +34,7 @@ const Realised = () => {
                     height={400}
                     alt={item.car}
                   />
-                  <div className="absolute bottom-0 p-4 text-h3 text-white font-bold">
+                  <div className="absolute bottom-0 p-2 lg:p-4 text-h3 text-white font-bold">
                     {item.car}
                   </div>
                 </a>

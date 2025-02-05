@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
   // Email options
   const mailOptions = {
     from: 'holub@nejlepsikomedie.cz', 
-    to: "holub@trimm.cz",
+    to: "info@westdetailing.cz",
     subject: 'WD - vyplněný formulář',
     text: `Zdar Teeckej, \n${name} ti vyplnil formulář tak na to koukni.\n\n Píše: \n ${message} from ${email}`,
   };

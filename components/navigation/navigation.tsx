@@ -55,7 +55,7 @@ const Navigation = () => {
                         <Link
                           key={page.name}
                           href={page.href}
-                          className="flex items-center text-text font-medium text-white"
+                          className="flex items-center text-text font-semibold text-white"
                         >
                           {page.name}
                         </Link>

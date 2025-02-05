@@ -8,7 +8,7 @@ interface RealisedDataProps {
 export const RealisedData: RealisedDataProps[] = [
     {
         id: "1",
-        car: "BMW 3",
+        car: "Ferrari F8",
         imageUrl: "/cars/f0.jpg",
         images:[
             "/cars/f0.jpg",
@@ -29,7 +29,7 @@ export const RealisedData: RealisedDataProps[] = [
     },
     {
         id: "2",
-        car: "BMW 3",
+        car: "Mercedes GLC63",
         imageUrl: "/cars/g1.jpg",
         images:[
             "/cars/g0.jpg",
@@ -55,10 +55,9 @@ export const RealisedData: RealisedDataProps[] = [
     },
     {
         id: "3",
-        car: "BMW 3",
+        car: "Mercedes GLC43",
         imageUrl: "/cars/amg1.jpg",
         images:[
-            "/cars/amg0.jpg",
             "/cars/amg1.jpg",
             "/cars/amg2.jpg",
             "/cars/amg3.jpg",
@@ -77,7 +76,7 @@ export const RealisedData: RealisedDataProps[] = [
     },
     {
         id: "4",
-        car: "BMW 3",
+        car: "Škoda Superb",
         imageUrl: "/cars/o1.jpg",
         images:[
             "/cars/o1.jpg",
@@ -92,7 +91,7 @@ export const RealisedData: RealisedDataProps[] = [
         ]
     },{
         id: "5",
-        car: "BMW 3",
+        car: "Audi RS6",
         imageUrl: "/cars/rs1.jpg",
         images:[
             "/cars/rs0.jpg",
@@ -118,7 +117,7 @@ export const RealisedData: RealisedDataProps[] = [
     },
     {
         id: "6",
-        car: "BMW 3",
+        car: "Mercedes S63",
         imageUrl: "/cars/s1.jpg",
         images:[
             "/cars/s0.jpg",
@@ -144,6 +143,28 @@ export const RealisedData: RealisedDataProps[] = [
         ]
     },
     {
+        id: "10",
+        car: "Audi sQ8",
+        imageUrl: "/cars/q1.jpg",
+        images:[
+           "/cars/q1.jpg",
+            "/cars/q2.jpg",
+            "/cars/q3.jpg",
+            "/cars/q4.jpg",
+            "/cars/q5.jpg",
+            "/cars/q6.jpg",
+            "/cars/q7.jpg",
+            "/cars/q8.jpg",
+            "/cars/q9.jpg",
+            "/cars/q10.jpg",
+            "/cars/q11.jpg",
+            "/cars/q12.jpg",
+            "/cars/q13.jpg",
+            "/cars/q14.jpg",
+            "/cars/q15.jpg",
+        ]
+    },
+    {
         id: "7",
         car: "BMW 3",
         imageUrl: "/cars/bmw1.jpg",
@@ -166,11 +187,10 @@ export const RealisedData: RealisedDataProps[] = [
     },
     {
         id: "8",
-        car: "BMW 3",
+        car: "Mercedes GLC200",
         imageUrl: "/cars/mercedes1.jpg",
         images:[
             "/cars/mercedes1.jpg",
-            "/cars/mercedes2.jpg",
             "/cars/mercedes3.jpg",
             "/cars/mercedes4.jpg",
             "/cars/mercedes5.jpg",
@@ -182,12 +202,11 @@ export const RealisedData: RealisedDataProps[] = [
             "/cars/mercedes11.jpg",
             "/cars/mercedes12.jpg",
             "/cars/mercedes13.jpg",
-            "/cars/mercedes14.jpg",
         ]
     },
     {
         id: "9",
-        car: "BMW 3",
+        car: "Mustang GT",
         imageUrl: "/cars/mustang1.jpg",
         images:[
             "/cars/mustang1.jpg",
@@ -198,27 +217,6 @@ export const RealisedData: RealisedDataProps[] = [
             "/cars/mustang6.jpg",
             "/cars/mustang7.jpg"
         ]
-    },
-    {
-        id: "10",
-        car: "BMW 3",
-        imageUrl: "/cars/q1.jpg",
-        images:[
-           "/cars/q1.jpg",
-            "/cars/q2.jpg",
-            "/cars/q3.jpg",
-            "/cars/q4.jpg",
-            "/cars/q5.jpg",
-            "/cars/q6.jpg",
-            "/cars/q7.jpg",
-            "/cars/q8.jpg",
-            "/cars/q9.jpg",
-            "/cars/q10.jpg",
-            "/cars/q11.jpg",
-            "/cars/q12.jpg",
-            "/cars/q13.jpg",
-            "/cars/q14.jpg",
-            "/cars/q15.jpg",
-        ]
     }
+    
 ]

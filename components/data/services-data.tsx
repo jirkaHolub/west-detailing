@@ -176,33 +176,34 @@ export const servicesData: ServiceSection[] = [
 - Vysátí celého interiéru včetně kufru
 - Tepování koberečků + úprava vlákna
 - Vyleštění skel a displayů
-- Impregnace plastů
-- Provonění interiéru
+- Impregnace plastů a provonění interiéru
 `,
         price: formatPrice(2520),
       },
       {
         id: 16,
         title: "Superstar",
-        text: `- Předmytí aktivní pěnou
-- mytí podběhů
-- Vyčištění mezidveřních prostor
-- 1. Ruční mytí mikrovláknovou houbou
-- Ruční mytí kol chemií
-- 2. Detailní mytí kančí štětinou (kol, karoserie)
-- Aplikace Sealantu (ochrana na 3 měsíce)
-- Vysušení karoserie (vč. kol, mezidveřních prostor)
-- impregnace pneumatik
-- Vyčištění palubní desky a interiéru kančí štětinou
-- Vysátí celého interiéru včetně kufru
-- Vyleštění skel a displayů
-- tepování koberečků + úprava vlákna
-- tepování podlah vč. kufru
-- tepování dveří v případě kůže - hloubkové čištění melaminovou houbičkou
-- tepování látkových sedaček (u kůže hloubkové čistění melaminovou houbičkou)
-- Impregnace plastů
-- provonění interiéru`,
+        text: `Vše z balíčku Star
++ Vyčištění palubní desky a interiéru kančí štětinou
++ Vysátí celého interiéru včetně kufru
++ Vyleštění skel a displayů
++ tepování koberečků + úprava vlákna
++ tepování podlah vč. kufru
++ tepování dveří v případě kůže - hloubkové čištění melaminovou houbičkou
++ tepování látkových sedaček (u kůže hloubkové čistění melaminovou houbičkou)
++ Impregnace plastů`,
         price: formatPrice(3740),
+      },
+      {
+        id: 17,
+        title: "Supertopstar",
+        text: `Vše z balíčku SuperStar 
+        + leštění B/C sloupků
++	Aplikace sealantu na karoserii (ochrana na 3-4 měsíce) a detailní čištění motorového prostoru
++	Extra péče o exteriér i interiér s leštěním a impregnací
++	Úplné ošetření interiéru i s hloubkovým čištěním
+`,
+        price: formatPrice(5445),
       },
     ],
   },

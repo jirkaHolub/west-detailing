@@ -30,7 +30,7 @@ const CarPage = () => {
       <div className="pt-28 bg-black text-center text-h2 font-bold pb-8 px-4 lg:px-8 w-max-7xl mx-auto text-white">
         {car.car}
       </div>
-      <div className="bg-white py-10 px-4 lg:px-8">
+      <div className="bg-lightDark py-10 px-4 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {images.map((image, index) => (
             <div key={index} className="cursor-pointer" onClick={() => { setPhotoIndex(index); setIsOpen(true); }}>

@@ -59,7 +59,7 @@ const Services = () => {
                 open={openDrawerId === item.id}
                 onOpenChange={handleCloseDrawer}
               >
-                <DrawerContent className="p-6 bg-white rounded-lg shadow-lg">
+                <DrawerContent className="p-6 bg-lightDark border-ferrariYellow text-white rounded-lg shadow-lg">
                   <DrawerHeader>
                     <DrawerTitle className="text-2xl font-bold">
                       {item.title}
@@ -71,7 +71,7 @@ const Services = () => {
                         <DrawerTitle className="text-xl font-semibold">
                           {service.title}
                         </DrawerTitle>
-                        <div className="text-gray-700 mt-2">
+                        <div className="text-white mt-2">
                           {service.text.split("\n").map((line, i) => (
                             <p key={i}>{line}</p>
                           ))}
@@ -92,7 +92,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <div className="text-center mx-auto pt-10">
+        <div className="text-left lg:text-center mx-auto pt-10">
           <div>
             Věrnostní sleva -20% slevu získáváte při každé pravidelné návštěvě do 1 měsíce na stejnou SPZ<br />
             Automobily 4×4, SUV, crossovery, MPV a luxusní limuzíny = XL Ceník +20%<br />
